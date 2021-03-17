@@ -4,7 +4,8 @@ import { ProductComponent } from './components/product/product.component';
 
 const routes: Routes = [
   {path: "", pathMatch:"full", component:ProductComponent}, //ana sayfadaki rooter adresi
-  {path: "product", component:ProductComponent} //anasayfanın alt sayfası olan /product çağrılırsa rooter adresi
+  {path: "products", component:ProductComponent},
+  {path: "products/category/:categoryId", component:ProductComponent} // iki nokta demek değişken olarak 1 -2 -3 gibi değerler gelecek
 ];
 
 @NgModule({
